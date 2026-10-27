@@ -1,0 +1,147 @@
+.dashboard-app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem 1rem;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header */
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.header-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #bae6fd;
+}
+
+.dashboard-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0f2c59;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.dashboard-subtitle {
+  font-size: 1.05rem;
+  color: #5b708b;
+  margin: 0;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Quick city suggestions */
+.quick-cities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.quick-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-right: 0.3rem;
+}
+
+.city-chip {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.city-chip:hover:not(:disabled) {
+  border-color: #0284c7;
+  color: #0284c7;
+  background-color: #f0f9ff;
+}
+
+.city-chip.active {
+  background-color: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+}
+
+.city-chip:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Main Content */
+.dashboard-content {
+  min-height: 320px;
+}
+
+/* Footer */
+.dashboard-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.dashboard-footer a {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dashboard-footer a:hover {
+  text-decoration: underline;
+}
+
+.college-tag {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .dashboard-app {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.85rem;
+  }
+
+  .dashboard-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .quick-cities {
+    margin-bottom: 1.5rem;
+  }
+}
